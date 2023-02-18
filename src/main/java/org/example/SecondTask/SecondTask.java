@@ -11,8 +11,8 @@ import java.util.Scanner;
 public class SecondTask {
     public void saveUsersToJsonFile() {
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
-        String jsonFileAddress = "resources\\users.json"; // адрес JSON файлу, куди буде записано список User
-        String sourceFileAddress = "resources\\users.txt"; // файл звідки беремо дані
+        String jsonFileAddress = "resources/users.json"; // адрес JSON файлу, куди буде записано список User
+        String sourceFileAddress = "resources/users.txt"; // файл звідки беремо дані
         List<User> users = new ArrayList<>(); // список об'єктів типу User
 
         try(FileInputStream fis = new FileInputStream(sourceFileAddress);

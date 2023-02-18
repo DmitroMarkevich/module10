@@ -10,7 +10,7 @@ public class FirstTask {
     public void validatePhoneNumbers() {
 
         Pattern pattern = Pattern.compile("(\\(\\d{3}\\)\\s*\\d{3}-\\d{4}|\\d{3}-\\d{3}-\\d{4})");
-        String sourceFileAddress = "resources\\file.txt";
+        String sourceFileAddress = "resources/file.txt";
 
         try (FileInputStream fis = new FileInputStream(sourceFileAddress);
              Scanner scanner = new Scanner(fis)) {
